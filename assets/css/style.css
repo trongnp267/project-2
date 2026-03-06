@@ -293,7 +293,7 @@ input, textarea, select, button {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .checkbox-wrapper-28 {
     --size: 20px;
   }
