@@ -1,9 +1,20 @@
-doctype html
-html
-  head
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(charset="UTF-8")
-    title Đăng nhập
-    link(rel="stylesheet", href="assets/css/style.css")
-  body
-    h1 Day la trang login
+extend ../layouts/account.pug
+include ../mixins/checkbox.pug
+include ../mixins/inner-group-account.pug
+
+block title
+  title Đăng nhập
+
+block main
+  .inner-title Đăng nhập
+  .inner-desc Vui lòng nhập email và mật khẩu để tiếp tục
+  form
+    +inner-group("text", "email", "Email", "Ví dụ: levana@gmail.com")
+    +inner-group("password", "password", "Mật khẩu", "")
+    .inner-meta
+      +checkbox-28("rememberPassword", "Nhớ mật khẩu")
+      a.inner-link(href="#") Quên mật khẩu?
+    button.inner-button Đăng Nhập
+  .inner-more
+    span Bạn chưa có tài khoản?
+    a.inner-link(href="#") Tạo tài khoản
