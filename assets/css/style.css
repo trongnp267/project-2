@@ -307,3 +307,40 @@ input, textarea, select, button {
   }
 }
 /* End Checkbox Wrapper 28 */
+
+/* Header */
+.header {
+  background-color: #FFFFFF;
+  height: 70px;
+  border-bottom: 1px solid #E0E0E0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+/* End Header */
+
+/* Sider */
+.sider {
+  background-color: #FFFFFF;
+  width: 240px;
+  border-right: 1px solid #E0E0E0;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  overflow-y: auto;
+}
+/* End Sider */
+
+/* Main */
+.main {
+  background-color: #F5F6FA;
+  width: calc(100% - 240px);
+  min-height: calc(100vh - 70px);
+  position: absolute;
+  top: 70px;
+  left: 240px;
+}
+/* End Main */
