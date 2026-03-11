@@ -416,6 +416,56 @@ input, textarea, select, button {
   left: 0px;
   overflow-y: auto;
 }
+
+.sider .inner-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0px;
+}
+
+.sider .inner-list a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 24px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-2);
+  gap: 12px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.sider .inner-list a::before {
+  content: "";
+  width: 9px;
+  height: 100%;
+  position: absolute;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 4px;
+  top: 0;
+  left: -28.5px;
+}
+
+.sider .inner-list a.active::before, .sider .inner-list a:hover::before {
+  background-color: var(--color-1);
+}
+
+.sider .inner-list a.active, .sider .inner-list a:hover {
+  background-color: var(--color-1);
+  color: #FFFFFF;
+}
+
+.sider hr {
+  margin: 0;
+  border: 0.6px solid #E0E0E0;
+}
+
+.sider .inner-list a.inner-logout {
+  color: #F93C65;
+}
 /* End Sider */
 
 /* Main */
