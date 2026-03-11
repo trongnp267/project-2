@@ -782,3 +782,47 @@ input, textarea, select, button {
   color: #EF3826;
 }
 /* End Tag */
+
+/* Section 4 */
+.section-4 {
+  margin-bottom: 15px;
+}
+
+.section-4 .inner-wrap {
+  display: inline-flex;
+  background-color: #FFFFFF;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 14px;
+}
+
+.section-4 .inner-item {
+  padding: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-2);
+  border-right: 0.3px solid rgba(151, 151, 151, 0.6862);
+}
+
+.section-4 .inner-item:last-child {
+  border-right: 0;
+}
+
+.section-4 .inner-item select, .section-4 .inner-item input {
+  border: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-2);
+}
+
+.section-4 .inner-item input {
+  width: 110px;
+}
+
+.section-4 .inner-item.inner-reset {
+  color: #EA0234;
+  cursor: pointer;
+}
+/* End Section 4 */

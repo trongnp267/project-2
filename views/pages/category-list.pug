@@ -1,0 +1,28 @@
+extends ../layouts/default.pug
+
+block title
+  title Quản lý danh mục
+
+block main
+  .box-title Quản lý danh mục
+
+  //- Section 4
+  .section-4
+    .inner-wrap
+      .inner-item
+        <i class="fa-solid fa-filter"></i>
+        | Bộ lọc
+      .inner-item
+        select(name="")
+          option(value="") Trạng thái
+      .inner-item
+        select(name="")
+          option(value="") Người tạo
+      .inner-item
+        input(type="date", name="")
+        span -
+        input(type="date", name="")
+      .inner-item.inner-reset
+        <i class="fa-solid fa-rotate-left"></i>
+        | Xóa bộ lọc
+  //- End Section 4
