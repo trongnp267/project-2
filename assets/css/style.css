@@ -403,6 +403,38 @@ input, textarea, select, button {
   font-size: 12px;
   color: #565656;
 }
+
+.header .inner-wrap .inner-button-menu {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header .inner-logo {
+    width: auto;
+    padding-left: 30px;
+  }
+
+  .header .inner-wrap .inner-button-menu {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .inner-logo {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+
+  .header .inner-wrap {
+    gap: 20px;
+    padding-right: 15px;
+  }
+}
 /* End Header */
 
 /* Sider */
@@ -466,6 +498,12 @@ input, textarea, select, button {
 .sider .inner-list a.inner-logout {
   color: #F93C65;
 }
+
+@media (max-width: 992px) {
+  .sider {
+    display: none;
+  }    
+}
 /* End Sider */
 
 /* Main */
@@ -477,6 +515,19 @@ input, textarea, select, button {
   top: 70px;
   left: 240px;
   padding: 30px;
+}
+
+@media (max-width: 992px) {
+  .main {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 30px 15px;
+  }
 }
 /* End Main */
 
