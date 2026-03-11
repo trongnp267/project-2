@@ -476,5 +476,52 @@ input, textarea, select, button {
   position: absolute;
   top: 70px;
   left: 240px;
+  padding: 30px;
 }
 /* End Main */
+
+/* Box Title */
+.box-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-2);
+  margin-bottom: 30px;
+}
+/* End Box Title */
+
+/* Section 1 */
+
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.section-1 .inner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 28px 10px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+}
+
+.section-1 .inner-item img {
+  width: auto;
+  height: 60px;
+}
+
+.section-1 .inner-item .inner-text-1 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-2);
+  margin-bottom: 4px;
+}
+
+.section-1 .inner-item .inner-text-2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-2);
+}
+/* End Section 1 */
