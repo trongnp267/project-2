@@ -566,3 +566,128 @@ input, textarea, select, button {
   height: 273px;
 }
 /* End Section 2 */
+
+/* Section 3 */
+.section-3 {
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px #0000000D;
+  padding: 32px;
+}
+
+.section-3 .inner-title-main {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-2);
+  margin-bottom: 30px;
+}
+/* End Section 3 */
+
+/* Table 1 */
+.table-1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-1 thead th {
+  background-color: #F1F4F9;
+  padding: 14px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-2);
+  text-align: left;
+}
+
+.table-1 thead th:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.table-1 thead th:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.table-1 tbody td {
+  padding: 10px 24px;
+  border-bottom: 0.4px solid rgba(151, 151, 151, 0.4);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-2);
+}
+/* End Table 1 */
+
+/* Text */
+.text-main {
+  color: var(--color-1) !important;
+  font-weight: 700;
+}
+
+.text-right {
+  text-align: right !important;
+}
+/* End Text */
+
+/* Tour List */
+.tour-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tour-list .inner-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tour-list .inner-item img {
+  width: 76px;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.tour-list .inner-item .inner-content {
+  flex: 1;
+  font-weight: 600;
+  color: var(--color-2);
+}
+
+.tour-list .inner-item .inner-content .inner-name {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.tour-list .inner-item .inner-content .inner-price {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+/* End Tour List */
+
+/* Tag */
+.tag {
+  padding: 6px 23px;
+  border-radius: 4.5px;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.tag-orange {
+  background-color: rgba(255, 168, 86, 0.2);
+  color: #FFA756;
+}
+
+.tag-green {
+  background-color: rgba(0, 182, 155, 0.2);
+  color: #00B69B;
+}
+
+.tag-red {
+  background-color: rgba(239, 55, 38, 0.2);
+  color: #EF3826;
+}
+/* End Tag */
