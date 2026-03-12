@@ -918,6 +918,19 @@ input, textarea, select, button {
   opacity: 0.9;
 }
 
+.section-5 .inner-trash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 30px;
+  background-color: #EF382633;
+  font-weight: 700;
+  font-size: 14px;
+  color: #EF3826;
+  border-radius: 14px;
+  opacity: 0.9;
+}
+
 .section-5 .inner-create:hover {
   opacity: 1;
 }
@@ -938,6 +951,10 @@ input, textarea, select, button {
 
   .section-5 .inner-create {
     padding: 15px 50px;
+  }
+
+  .section-5 .inner-trash {
+    padding: 15px 30px;
   }
 }
 /* End Section 5 */

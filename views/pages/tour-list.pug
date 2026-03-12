@@ -3,10 +3,10 @@ include ../mixins/checkbox.pug
 include ../mixins/box-pagination.pug
 
 block title
-  title Quản lý danh mục
+  title Quản lý tour
 
 block main
-  .box-title Quản lý danh mục
+  .box-title Quản lý tour
 
   //- Section 4
   .section-4
@@ -24,6 +24,12 @@ block main
         input(type="date", name="")
         span -
         input(type="date", name="")
+      .inner-item
+        select(name="")
+          option(value="") Danh mục
+      .inner-item
+        select(name="")
+          option(value="") Mức giá
       .inner-item.inner-reset
         <i class="fa-solid fa-rotate-left"></i>
         | Xóa bộ lọc
@@ -40,6 +46,7 @@ block main
         button <i class="fa-solid fa-magnifying-glass"></i>
         input(type="text", name="", placeholder="Tìm kiếm")
       a.inner-create(href="#") + Tạo mới
+      a.inner-trash(href="#") Thùng rác
   //- End Section 5
 
   //- Section 6
@@ -50,8 +57,10 @@ block main
           tr
             th
               +checkbox-28("#check-all")
-            th Tên danh mục
+            th Tên tour
             th Ảnh đại diện
+            th Giá
+            th Còn lại
             th Vị trí
             th Trạng thái
             th Tạo bởi
@@ -64,6 +73,14 @@ block main
             td Danh mục 1
             td
               img(src="assets/images/tour-1.png", alt="")
+            td
+              div NL: 1.900.000đ
+              div TE: 1.600.000đ
+              div EB: 1.000.000đ
+            td
+              div NL: 30
+              div TE: 20
+              div EB: 10
             td 1
             td
               .tag.tag-red Tạm dừng
@@ -83,6 +100,14 @@ block main
             td Danh mục 2
             td
               img(src="assets/images/tour-1.png", alt="")
+            td
+              div NL: 1.900.000đ
+              div TE: 1.600.000đ
+              div EB: 1.000.000đ
+            td
+              div NL: 30
+              div TE: 20
+              div EB: 10
             td 1
             td
               .tag.tag-green Hoạt động
