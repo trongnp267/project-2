@@ -915,3 +915,77 @@ input, textarea, select, button {
   opacity: 1;
 }
 /* End Section 5 */
+
+/* Section 6 */
+.section-6 {
+  margin-bottom: 15px;
+}
+/* End Section 6 */
+
+/* Table 2 */
+.table-2 table {
+  background-color: #FFFFFF;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 14px;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.table-2 table thead th {
+  padding: 15px;
+  background-color: #FCFDFD;
+  border-bottom: 0.6px solid #D5D5D5;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--color-2);
+  text-align: left;
+}
+
+.table-2 table tbody td {
+  padding: 8px 15px;
+  border-bottom: 0.6px solid #D5D5D5;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-2);
+}
+
+.table-2 table tbody td img {
+  width: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.table-2 table tbody td .inner-time {
+  font-size: 12px;
+}
+/* End Table 2 */
+
+/* Box Action */
+.box-action {
+  display: inline-flex;
+  background-color: #FAFBFD;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 8px;
+}
+
+.box-action a {
+  padding: 8.5px 16.5px;
+  font-size: 15px;
+  border-right: 0.4px solid rgba(151, 151, 151, 0.7005);
+}
+
+.box-action a:last-child {
+  border-right: 0;
+}
+
+.box-action a.inner-edit {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.box-action a.inner-trash {
+  color: #EF3826;
+}
+/* End Box Action */
