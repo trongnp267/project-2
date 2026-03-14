@@ -1,0 +1,103 @@
+extends ../layouts/default.pug
+include ../mixins/checkbox.pug
+
+block title
+  title Tạo tour
+
+block main
+  .box-title Tạo tour
+
+  //- Section 7
+  .section-7
+    form.inner-form
+      .inner-group
+        label(for="", class="inner-label") Tên tour
+        input(type="text", name="", class="inner-control")
+      .inner-group
+        label(for="", class="inner-label") Danh mục
+        select(name="", class="inner-control")
+          option(value="") -- Chọn danh mục --
+          option(value="") category-1
+          option(value="") category-2
+          option(value="") category-3
+      .inner-group
+        label(for="", class="inner-label") Vị trí
+        input(type="number", name="", class="inner-control")
+      .inner-group
+        label(for="", class="inner-label") Trạng thái
+        select(name="", class="inner-control")
+          option(value="") Hoạt động
+      .inner-group.inner-two-col
+        label(for="", class="inner-label") Ảnh đại diện
+        input(type="file", name="", class="inner-control inner-input-file")
+      .inner-group
+        label(for="", class="inner-label") Giá cũ
+        .inner-list
+          .inner-item
+            .inner-item-label Người lớn
+            input(type="number", name="" class="inner-item-input")
+          .inner-item
+            .inner-item-label Trẻ em
+            input(type="number", name="" class="inner-item-input")
+          .inner-item
+            .inner-item-label Em bé
+            input(type="number", name="" class="inner-item-input")
+      .inner-group
+        label(for="", class="inner-label") Giá mới
+        .inner-list
+          .inner-item
+            .inner-item-label Người lớn
+            input(type="number", name="" class="inner-item-input")
+          .inner-item
+            .inner-item-label Trẻ em
+            input(type="number", name="" class="inner-item-input")
+          .inner-item
+            .inner-item-label Em bé
+            input(type="number", name="" class="inner-item-input")
+      .inner-group
+        label(for="", class="inner-label") Còn lại
+        .inner-list
+          .inner-item
+            .inner-item-label Người lớn
+            input(type="number", name="" class="inner-item-input")
+          .inner-item
+            .inner-item-label Trẻ em
+            input(type="number", name="" class="inner-item-input")
+          .inner-item
+            .inner-item-label Em bé
+            input(type="number", name="" class="inner-item-input")
+      .inner-group
+        label(for="", class="inner-label") Những địa điểm có tour
+        .inner-checkbox-location
+          +checkbox-28("ha-noi", "Hà Nội")
+          +checkbox-28("da-nang", "Đà Nẵng")
+          +checkbox-28("ca-mau", "Cà Mau")
+          +checkbox-28("ho-chi-minh", "Hồ Chí Minh")
+      .inner-group
+        label(for="", class="inner-label") Thời gian
+        input(type="text", name="", class="inner-control")
+      .inner-group
+        label(for="", class="inner-label") Phương tiện
+        input(type="text", name="", class="inner-control")
+      .inner-group
+        label(for="", class="inner-label") Ngày khởi hành
+        input(type="date", name="", class="inner-control")
+      .inner-group.inner-two-col
+        label(for="", class="inner-label") Thông tin tour
+        textarea(name="", class="inner-control")
+      .inner-group.inner-two-col
+        label(for="", class="inner-label") Lịch trình tour
+        .inner-schedule-list
+          .inner-schedule-item
+            .inner-head
+              .inner-button <i class="fa-solid fa-arrows-up-down-left-right"></i>
+              input(type="text", name="")
+              .inner-button.inner-trash <i class="fa-solid fa-trash-can"></i>
+              .inner-button <i class="fa-solid fa-angle-down"></i>
+            .inner-body
+              textarea(name="") 
+        .inner-schedule-create + Thêm lich trình
+      .inner-two-col.inner-button
+        button Tạo mới
+    a.inner-back(href="#") Quay lại danh sách
+  //- End Section 7

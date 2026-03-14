@@ -1117,6 +1117,129 @@ input, textarea, select, button {
   height: auto;
 }
 
+.section-7 .inner-form .inner-group .inner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section-7 .inner-form .inner-group .inner-list .inner-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.section-7 .inner-form .inner-group .inner-list .inner-item .inner-item-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+  width: 89px;
+}
+
+.section-7 .inner-form .inner-group .inner-list .inner-item .inner-item-input {
+  flex: 1;
+  height: 52px;
+  background-color: #F5F6FA;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  padding: 0 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-2);
+}
+
+.section-7 .inner-form .inner-group .inner-checkbox-location {
+  border: 1px solid #D5D5D5;
+  background-color: #F5F6FA;
+  border-radius: 4px;
+  padding: 14px 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 166px;
+  overflow-y: auto;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-list .inner-schedule-item {
+  background-color: #FFFFFF;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-list .inner-schedule-item .inner-head {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-list .inner-schedule-item .inner-head .inner-button {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F6FA;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #A6A6A6;
+  cursor: pointer;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-list .inner-schedule-item .inner-head .inner-button.inner-trash {
+  color: #EF3826;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-list .inner-schedule-item .inner-head input {
+  flex: 1;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  background-color: #F5F6FA;
+  height: 52px;
+  padding: 0 17px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-2);
+  text-transform: uppercase;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-list .inner-schedule-item .inner-body textarea {
+  background-color: #F5F6FA;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  padding: 16px 22px;
+  width: 100%;
+  height: 300px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-2);
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-create {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: #D5D5D5;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-2);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.section-7 .inner-form .inner-group .inner-schedule-create:hover {
+  opacity: 1;
+}
+
 .section-7 .inner-form .inner-button {
   text-align: center;
 }

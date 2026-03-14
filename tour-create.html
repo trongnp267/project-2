@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Tạo tour</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <header class="header"><a class="inner-logo" href="#"><span class="inner-text-1">28</span><span class="inner-text-2">Admin</span></a>
+      <div class="inner-wrap">
+        <div class="inner-notification"><img src="assets/images/header-icon.svg" alt=""><span>6</span></div>
+        <div class="inner-profile">
+          <div class="inner-image"><img src="assets/images/header-profile.svg" alt=""></div>
+          <div class="inner-content">
+            <div class="inner-name">Le Van A</div>
+            <div class="inner-role">Admin</div>
+          </div>
+        </div>
+        <button class="inner-button-menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </header>
+    <nav class="sider">
+      <ul class="inner-list">
+        <li><a class="active" href="#"><i class="fa-solid fa-gauge-high"></i> Tổng quan</a></li>
+        <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Quản lý danh mục</a></li>
+        <li><a href="#"><i class="fa-solid fa-table-list"></i> Quản lý tour</a></li>
+        <li><a href="#"><i class="fa-solid fa-list-check"></i> Quản lý đơn hàng</a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i> Quản lý người dùng</a></li>
+        <li><a href="#"><i class="fa-solid fa-user-group"></i> Thông tin liên hệ</a></li>
+      </ul>
+      <hr>
+      <ul class="inner-list">
+        <li><a href="#"><i class="fa-solid fa-gear"></i> Cài đặt chung</a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i> Thông tin cá nhân</a></li>
+        <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="box-title">Tạo tour</div>
+      <div class="section-7">
+        <form class="inner-form">
+          <div class="inner-group">
+            <label class="inner-label" for="">Tên tour</label>
+            <input class="inner-control" type="text" name="">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Danh mục</label>
+            <select class="inner-control" name="">
+              <option value="">-- Chọn danh mục --</option>
+              <option value="">category-1</option>
+              <option value="">category-2</option>
+              <option value="">category-3</option>
+            </select>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Vị trí</label>
+            <input class="inner-control" type="number" name="">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Trạng thái</label>
+            <select class="inner-control" name="">
+              <option value="">Hoạt động</option>
+            </select>
+          </div>
+          <div class="inner-group inner-two-col">
+            <label class="inner-label" for="">Ảnh đại diện</label>
+            <input class="inner-control inner-input-file" type="file" name="">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Giá cũ</label>
+            <div class="inner-list">
+              <div class="inner-item">
+                <div class="inner-item-label">Người lớn</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+              <div class="inner-item">
+                <div class="inner-item-label">Trẻ em</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+              <div class="inner-item">
+                <div class="inner-item-label">Em bé</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Giá mới</label>
+            <div class="inner-list">
+              <div class="inner-item">
+                <div class="inner-item-label">Người lớn</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+              <div class="inner-item">
+                <div class="inner-item-label">Trẻ em</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+              <div class="inner-item">
+                <div class="inner-item-label">Em bé</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Còn lại</label>
+            <div class="inner-list">
+              <div class="inner-item">
+                <div class="inner-item-label">Người lớn</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+              <div class="inner-item">
+                <div class="inner-item-label">Trẻ em</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+              <div class="inner-item">
+                <div class="inner-item-label">Em bé</div>
+                <input class="inner-item-input" type="number" name="">
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Những địa điểm có tour</label>
+            <div class="inner-checkbox-location">
+              <div class="checkbox-wrapper-28">
+                <input class="promoted-input-checkbox" type="checkbox" id="ha-noi"/>
+                <svg>
+                  <use xlink:href="#checkmark-28"></use>
+                </svg>
+                <label for="ha-noi">Hà Nội</label>
+                <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+                  <symbol id="checkmark-28" viewBox="0 0 24 24">
+                    <path d="M22.9 3.7l-15.2 16.6-6.6-7.1" fill="none" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  </symbol>
+                </svg>
+              </div>
+              <div class="checkbox-wrapper-28">
+                <input class="promoted-input-checkbox" type="checkbox" id="da-nang"/>
+                <svg>
+                  <use xlink:href="#checkmark-28"></use>
+                </svg>
+                <label for="da-nang">Đà Nẵng</label>
+                <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+                  <symbol id="checkmark-28" viewBox="0 0 24 24">
+                    <path d="M22.9 3.7l-15.2 16.6-6.6-7.1" fill="none" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  </symbol>
+                </svg>
+              </div>
+              <div class="checkbox-wrapper-28">
+                <input class="promoted-input-checkbox" type="checkbox" id="ca-mau"/>
+                <svg>
+                  <use xlink:href="#checkmark-28"></use>
+                </svg>
+                <label for="ca-mau">Cà Mau</label>
+                <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+                  <symbol id="checkmark-28" viewBox="0 0 24 24">
+                    <path d="M22.9 3.7l-15.2 16.6-6.6-7.1" fill="none" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  </symbol>
+                </svg>
+              </div>
+              <div class="checkbox-wrapper-28">
+                <input class="promoted-input-checkbox" type="checkbox" id="ho-chi-minh"/>
+                <svg>
+                  <use xlink:href="#checkmark-28"></use>
+                </svg>
+                <label for="ho-chi-minh">Hồ Chí Minh</label>
+                <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+                  <symbol id="checkmark-28" viewBox="0 0 24 24">
+                    <path d="M22.9 3.7l-15.2 16.6-6.6-7.1" fill="none" stroke-miterlimit="10" stroke-linecap="round"></path>
+                  </symbol>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Thời gian</label>
+            <input class="inner-control" type="text" name="">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Phương tiện</label>
+            <input class="inner-control" type="text" name="">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Ngày khởi hành</label>
+            <input class="inner-control" type="date" name="">
+          </div>
+          <div class="inner-group inner-two-col">
+            <label class="inner-label" for="">Thông tin tour</label>
+            <textarea class="inner-control" name=""></textarea>
+          </div>
+          <div class="inner-group inner-two-col">
+            <label class="inner-label" for="">Lịch trình tour</label>
+            <div class="inner-schedule-list">
+              <div class="inner-schedule-item">
+                <div class="inner-head">
+                  <div class="inner-button"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+                  <input type="text" name="">
+                  <div class="inner-button inner-trash"><i class="fa-solid fa-trash-can"></i></div>
+                  <div class="inner-button"><i class="fa-solid fa-angle-down"></i></div>
+                </div>
+                <div class="inner-body">
+                  <textarea name=""> </textarea>
+                </div>
+              </div>
+            </div>
+            <div class="inner-schedule-create">+ Thêm lich trình</div>
+          </div>
+          <div class="inner-two-col inner-button">
+            <button>Tạo mới</button>
+          </div>
+        </form><a class="inner-back" href="#">Quay lại danh sách</a>
+      </div>
+    </main>
+  </body>
+</html>
