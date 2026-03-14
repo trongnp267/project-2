@@ -717,6 +717,10 @@ input, textarea, select, button {
 .text-right {
   text-align: right !important;
 }
+
+.text-center {
+  text-align: center !important;
+}
 /* End Text */
 
 /* Tour List */
