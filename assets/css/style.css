@@ -1245,6 +1245,56 @@ input, textarea, select, button {
   opacity: 1;
 }
 
+.section-7 .inner-form .inner-group .inner-tour-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-7 .inner-form .inner-group .inner-tour-list .inner-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-7 .inner-form .inner-group .inner-tour-list .inner-item img {
+  width: 115px;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.section-7 .inner-form .inner-group .inner-tour-list .inner-item .inner-content {
+  flex: 1;
+  font-weight: 600;
+  color: var(--color-2);
+  opacity: 0.8;
+}
+
+.section-7 .inner-form .inner-group .inner-tour-list .inner-item .inner-content .inner-tour-name {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.section-7 .inner-form .inner-group .inner-tour-list .inner-item .inner-content .inner-tour-detail {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.section-7 .inner-form .inner-group .inner-price {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-2);
+  opacity: 0.8;
+}
+
+.section-7 .inner-form .inner-group .inner-price .inner-price-hl {
+  font-weight: 700;
+  color: #EF3826;
+}
+
 .section-7 .inner-form .inner-button {
   text-align: center;
 }
