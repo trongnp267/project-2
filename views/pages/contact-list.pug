@@ -1,0 +1,70 @@
+extends ../layouts/default.pug
+include ../mixins/checkbox.pug
+include ../mixins/box-pagination.pug
+
+block title
+  title Thông tin liên hệ
+
+block main
+  .box-title Thông tin liên hệ
+
+  //- Section 4
+  .section-4
+    .inner-wrap
+      .inner-item
+        <i class="fa-solid fa-filter"></i>
+        | Bộ lọc
+      .inner-item
+        input(type="date", name="")
+        span -
+        input(type="date", name="")
+      .inner-item.inner-reset
+        <i class="fa-solid fa-rotate-left"></i>
+        | Xóa bộ lọc
+  //- End Section 4
+
+  //- Section 5
+  .section-5
+    .inner-wrap
+      form.inner-change-status
+        select(name="")
+          option(value="") -- Hành động --
+        button Áp dụng
+      form.inner-search
+        button <i class="fa-solid fa-magnifying-glass"></i>
+        input(type="text", name="", placeholder="Tìm kiếm")
+  //- End Section 5
+
+  //- Section 6
+  .section-6
+    .table-2
+      table
+        thead
+          tr
+            th
+              +checkbox-28("#check-all")
+            th Email
+            th Ngày tạo
+            th Hành động
+        tbody
+          tr
+            td
+              +checkbox-28("#check-1")
+            td levana@gmail.com
+            td 16:40 - 12/12/2024
+            td
+              .box-action
+                a.inner-trash(href="#") <i class="fa-solid fa-trash-can"></i>
+          tr
+            td
+              +checkbox-28("#check-1")
+            td levana@gmail.com
+            td 16:40 - 12/12/2024
+            td
+              .box-action
+                a.inner-trash(href="#") <i class="fa-solid fa-trash-can"></i>
+  //- End Section 6
+
+  //- Box Pagination
+  +box-pagination()
+  //- Box Pagination
