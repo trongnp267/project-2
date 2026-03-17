@@ -1360,3 +1360,44 @@ input, textarea, select, button {
   }
 }
 /* End Section 7 */
+
+/* Section 8 */
+.section-8 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.section-8 .inner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  padding: 25px 10px;
+}
+
+.section-8 .inner-item img {
+  width: 70px;
+  height: auto;
+}
+
+.section-8 .inner-item .inner-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-2);
+}
+
+@media(max-width: 1200px) {
+  .section-8 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 768px) {
+  .section-8 {
+    grid-template-columns: 1fr;
+  }
+}
+/* End Section 8 */
