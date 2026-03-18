@@ -1,0 +1,30 @@
+extends ../layouts/default.pug
+include ../mixins/checkbox.pug
+
+block title
+  title Tạo nhóm quyền
+
+block main
+  .box-title Tạo nhóm quyền
+
+  //- Section 7
+  .section-7
+    form.inner-form
+      .inner-group
+        label(for="", class="inner-label") Tên nhóm quyền
+        input(type="text", name="", class="inner-control")
+      .inner-group
+        label(for="", class="inner-label") Mô tả ngắn
+        input(type="text", name="", class="inner-control")
+      .inner-group
+        label(for="", class="inner-label") Phân quyền
+        .inner-checkbox-list
+          +checkbox-28("box-1", "Xem trang Tổng quan")
+          +checkbox-28("box-2", "Xem danh mục")
+          +checkbox-28("box-3", "Tạo danh mục")
+          +checkbox-28("box-4", "Sửa danh mục")
+          +checkbox-28("box-5", "Xóa danh mục")
+      .inner-two-col.inner-button
+        button Tạo mới
+    a.inner-back(href="#") Quay lại danh sách
+  //- End Section 7
