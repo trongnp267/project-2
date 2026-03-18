@@ -1401,3 +1401,58 @@ input, textarea, select, button {
   }
 }
 /* End Section 8 */
+
+/* Setion 10 */
+.section-10 {
+  padding: 80px 15px;
+  background-color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.section-10 img {
+  max-width: 290px;
+  width: 100%;
+  height: auto;
+}
+
+.section-10 .inner-text {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-2);
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.section-10 .inner-button {
+  max-width: 418px;
+  width: 100%;
+  height: 56px;
+  margin: 0 auto;
+  background-color: var(--color-1);
+  opacity: 0.9;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+}
+
+.section-10 .inner-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .section-10 {
+    padding: 45px 15px;
+  }
+
+  .section-10 .inner-text {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+/* End Setion 10 */
