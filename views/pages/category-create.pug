@@ -8,30 +8,34 @@ block main
 
   //- Section 7
   .section-7
-    form.inner-form
+    form.inner-form#categoryCreateForm
       .inner-group
-        label(for="", class="inner-label") Tên danh mục
-        input(type="text", name="", class="inner-control")
+        label(for="categoryName", class="inner-label") Tên danh mục *
+        input(type="text", name="categoryName", class="inner-control", id="categoryName")
       .inner-group
-        label(for="", class="inner-label") Danh mục cha
-        select(name="", class="inner-control")
+        label(for="categoryParent", class="inner-label") Danh mục cha
+        select(name="categoryParent", class="inner-control", id="categoryParent")
           option(value="") -- Chọn danh mục --
-          option(value="") category-1
-          option(value="") category-2
-          option(value="") category-3
+          option(value="category-1") category-1
+          option(value="category-2") category-2
+          option(value="category-3") category-3
       .inner-group
-        label(for="", class="inner-label") Vị trí
-        input(type="number", name="", class="inner-control")
+        label(for="position", class="inner-label") Vị trí
+        input(type="number", name="position", class="inner-control", id="position")
       .inner-group
-        label(for="", class="inner-label") Trạng thái
-        select(name="", class="inner-control")
-          option(value="") Hoạt động
+        label(for="status", class="inner-label") Trạng thái
+        select(name="status", class="inner-control", id="status")
+          option(value="hoat-dong") Hoạt động
+          option(value="tam-dung") Tạm dừng
       .inner-group.inner-two-col
-        label(for="", class="inner-label") Ảnh đại diện
-        input(type="file", name="", class="inner-control inner-input-file")
+        label(for="avatar", class="inner-label") Ảnh đại diện
+        input(type="file", name="avatar", class="inner-control inner-input-file", filepond-image, id="avatar")
       .inner-group.inner-two-col
-        label(for="", class="inner-label") Mô tả
-        textarea(name="", class="inner-control")
+        label(for="logo", class="inner-label") Logo
+        input(type="file", name="logo", class="inner-control inner-input-file", filepond-image, id="logo")
+      .inner-group.inner-two-col
+        label(for="description", class="inner-label") Mô tả
+        textarea(name="description", class="inner-control", textarea-mce, id="description")
       .inner-two-col.inner-button
         button Tạo mới
     a.inner-back(href="#") Quay lại danh sách

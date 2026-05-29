@@ -4,8 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Thùng rác tour</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css">
+    <link rel="stylesheet" href="https://unpkg.com/filepond@^4/dist/filepond.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tiny.cloud/1/8gl56ezm94s5nxbgzp5wseyblhplcznd0xamzx5l138on6gz/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header"><a class="inner-logo" href="#"><span class="inner-text-1">28</span><span class="inner-text-2">Admin</span></a>
@@ -37,6 +40,7 @@
         <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
       </ul>
     </nav>
+    <div class="box-overlay"></div>
     <main class="main">
       <div class="box-title">Thùng rác tour</div>
       <div class="section-5">
@@ -183,5 +187,12 @@
         </select>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"> </script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="assets/js/script.js"> </script>
   </body>
 </html>

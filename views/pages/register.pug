@@ -8,10 +8,10 @@ block title
 block main
   .inner-title Đăng ký
   .inner-desc Tạo một tài khoản để tiếp tục
-  form
-    +inner-group("text", "fullName", "Họ tên", "Ví dụ: Lê Văn A")
-    +inner-group("text", "email", "Email", "Ví dụ: levana@gmail.com")
-    +inner-group("password", "password", "Mật khẩu", "")
+  form#registerForm
+    +inner-group("text", "fullName", "Họ tên", "Ví dụ: Lê Văn A", "fullName")
+    +inner-group("text", "email", "Email", "Ví dụ: levana@gmail.com", "email")
+    +inner-group("password", "password", "Mật khẩu", "", "password")
     .inner-meta
       +checkbox-28("agree", "Tôi chấp nhận các điều khoản và điều kiện")
     button.inner-button Đăng Ký

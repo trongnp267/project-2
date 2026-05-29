@@ -9,93 +9,94 @@ block main
 
   //- Section 7
   .section-7
-    form.inner-form
+    form.inner-form(id="tourCreateForm")
       .inner-group
-        label(for="", class="inner-label") Tên tour
-        input(type="text", name="", class="inner-control")
+        label(for="name", class="inner-label") Tên tour *
+        input(type="text", name="name", class="inner-control", id="name")
       .inner-group
-        label(for="", class="inner-label") Danh mục
-        select(name="", class="inner-control")
+        label(for="category", class="inner-label") Danh mục
+        select(name="category", class="inner-control", id="category")
           option(value="") -- Chọn danh mục --
-          option(value="") category-1
-          option(value="") category-2
-          option(value="") category-3
+          option(value="category-1") category-1
+          option(value="category-2") category-2
+          option(value="category-3") category-3
       .inner-group
-        label(for="", class="inner-label") Vị trí
-        input(type="number", name="", class="inner-control")
+        label(for="position", class="inner-label") Vị trí
+        input(type="number", name="position", class="inner-control", id="position")
       .inner-group
-        label(for="", class="inner-label") Trạng thái
-        select(name="", class="inner-control")
-          option(value="") Hoạt động
+        label(for="status", class="inner-label") Trạng thái
+        select(name="status", class="inner-control", id="status")
+          option(value="hoat-dong") Hoạt động
+          option(value="tam-dung") Tạm dừng
       .inner-group.inner-two-col
-        label(for="", class="inner-label") Ảnh đại diện
-        input(type="file", name="", class="inner-control inner-input-file")
+        label(for="avatar", class="inner-label") Ảnh đại diện
+        input(type="file", name="avatar", class="inner-control inner-input-file", filepond-image, id="avatar")
       .inner-group
         label(for="", class="inner-label") Giá cũ
         .inner-list
           .inner-item
             .inner-item-label Người lớn
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="priceAdult" class="inner-item-input", id="priceAdult")
           .inner-item
             .inner-item-label Trẻ em
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="priceChild" class="inner-item-input", id="priceChild")
           .inner-item
             .inner-item-label Em bé
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="priceBaby" class="inner-item-input", id="priceBaby")
       .inner-group
         label(for="", class="inner-label") Giá mới
         .inner-list
           .inner-item
             .inner-item-label Người lớn
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="newPriceAdult" class="inner-item-input", id="newPriceAdult")
           .inner-item
             .inner-item-label Trẻ em
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="newPriceChild" class="inner-item-input", id="newPriceChild")
           .inner-item
             .inner-item-label Em bé
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="newPriceBaby" class="inner-item-input", id="newPriceBaby")
       .inner-group
         label(for="", class="inner-label") Còn lại
         .inner-list
           .inner-item
             .inner-item-label Người lớn
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="stockAdult" class="inner-item-input", id="stockAdult")
           .inner-item
             .inner-item-label Trẻ em
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="stockChild" class="inner-item-input", id="stockChild")
           .inner-item
             .inner-item-label Em bé
-            input(type="number", name="" class="inner-item-input")
+            input(type="number", name="stockBaby" class="inner-item-input", id="stockBaby")
       .inner-group
         label(for="", class="inner-label") Những địa điểm có tour
         .inner-checkbox-list
-          +checkbox-28("ha-noi", "Hà Nội")
-          +checkbox-28("da-nang", "Đà Nẵng")
-          +checkbox-28("ca-mau", "Cà Mau")
-          +checkbox-28("ho-chi-minh", "Hồ Chí Minh")
+          +checkbox-28("ha-noi", "Hà Nội", "locations", "id-ha-noi")
+          +checkbox-28("da-nang", "Đà Nẵng", "locations", "id-da-nang")
+          +checkbox-28("ca-mau", "Cà Mau", "locations", "id-ca-mau")
+          +checkbox-28("ho-chi-minh", "Hồ Chí Minh", "locations", "id-ho-chi-minh")
       .inner-group
-        label(for="", class="inner-label") Thời gian
-        input(type="text", name="", class="inner-control")
+        label(for="time", class="inner-label") Thời gian
+        input(type="text", name="time", class="inner-control", id="time")
       .inner-group
-        label(for="", class="inner-label") Phương tiện
-        input(type="text", name="", class="inner-control")
+        label(for="transport", class="inner-label") Phương tiện
+        input(type="text", name="transport", class="inner-control", id="transport")
       .inner-group
-        label(for="", class="inner-label") Ngày khởi hành
-        input(type="date", name="", class="inner-control")
+        label(for="date", class="inner-label") Ngày khởi hành
+        input(type="date", name="date", class="inner-control", id="date")
       .inner-group.inner-two-col
-        label(for="", class="inner-label") Thông tin tour
-        textarea(name="", class="inner-control")
+        label(for="description", class="inner-label") Thông tin tour
+        textarea(name="description", class="inner-control", textarea-mce, id="description")
       .inner-group.inner-two-col
         label(for="", class="inner-label") Lịch trình tour
         .inner-schedule-list
           .inner-schedule-item
             .inner-head
-              .inner-button <i class="fa-solid fa-arrows-up-down-left-right"></i>
+              .inner-button.inner-move <i class="fa-solid fa-arrows-up-down-left-right"></i>
               input(type="text", name="")
               .inner-button.inner-trash <i class="fa-solid fa-trash-can"></i>
-              .inner-button <i class="fa-solid fa-angle-down"></i>
-            .inner-body
-              textarea(name="") 
+              .inner-button.inner-more <i class="fa-solid fa-angle-down"></i>
+            .inner-body.show
+              textarea(name="", textarea-mce) 
         .inner-schedule-create + Thêm lich trình
       .inner-two-col.inner-button
         button Tạo mới

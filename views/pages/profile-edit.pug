@@ -8,16 +8,16 @@ block main
 
   //- Section 7
   .section-7
-    form.inner-form
+    form.inner-form(id="profileEditForm")
       .inner-group
-        label(for="", class="inner-label") Họ tên
-        input(type="text", name="", class="inner-control")
+        label(for="fullName", class="inner-label") Họ tên *
+        input(type="text", name="fullName", class="inner-control", id="fullName")
       .inner-group
-        label(for="", class="inner-label") Email
-        input(type="email", name="", class="inner-control")
+        label(for="email", class="inner-label") Email *
+        input(type="email", name="email", class="inner-control", id="email")
       .inner-group
-        label(for="", class="inner-label") Số điện thoại
-        input(type="number", name="", class="inner-control")
+        label(for="phone", class="inner-label") Số điện thoại
+        input(type="number", name="phone", class="inner-control", id="phone")
       .inner-group
         label(for="", class="inner-label") Chức vụ
         input(type="text", name="", class="inner-control", value="Giám đốc" readonly)
@@ -25,8 +25,8 @@ block main
         label(for="", class="inner-label") Nhóm quyền
         input(type="text", name="", class="inner-control", value="Quản trị viên", readonly)
       .inner-group.inner-two-col
-        label(for="", class="inner-label") Ảnh đại diện
-        input(type="file", name="", class="inner-control inner-input-file")
+        label(for="avatar", class="inner-label") Ảnh đại diện
+        input(type="file", name="avatar", class="inner-control inner-input-file", filepond-image , id="avatar")
       .inner-two-col.inner-button
         button Cập nhật
     a.inner-back(href="#") Đổi mật khẩu

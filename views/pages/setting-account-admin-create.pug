@@ -8,33 +8,35 @@ block main
 
   //- Section 7
   .section-7
-    form.inner-form
+    form.inner-form(id="settingAccountAdminCreateForm")
       .inner-group
-        label(for="", class="inner-label") Họ tên
-        input(type="text", name="", class="inner-control")
+        label(for="fullName", class="inner-label") Họ tên *
+        input(type="text", name="fullName", class="inner-control", id="fullName")
       .inner-group
-        label(for="", class="inner-label") Email
-        input(type="email", name="", class="inner-control")
+        label(for="email", class="inner-label") Email *
+        input(type="email", name="email", class="inner-control", id="email")
       .inner-group
-        label(for="", class="inner-label") Số điện thoại
-        input(type="number", name="", class="inner-control")
+        label(for="phone", class="inner-label") Số điện thoại
+        input(type="number", name="phone", class="inner-control", id="phone")
       .inner-group
-        label(for="", class="inner-label") Nhóm quyền
-        select(name="", class="inner-control")
-          option(value="") Quản trị viên
+        label(for="role", class="inner-label") Nhóm quyền
+        select(name="role", class="inner-control", id="role")
+          option(value="admin") Quản trị viên
+          option(value="user") Người dùng
       .inner-group
-        label(for="", class="inner-label") Chức vụ
-        input(type="text", name="", class="inner-control")
+        label(for="position", class="inner-label") Chức vụ
+        input(type="text", name="position", class="inner-control", id="position")
       .inner-group
-        label(for="", class="inner-label") Trạng thái
-        select(name="", class="inner-control")
-          option(value="") Hoạt động
+        label(for="status", class="inner-label") Trạng thái
+        select(name="status", class="inner-control", id="status")
+          option(value="hoat-dong") Hoạt động
+          option(value="tam-dung") Tạm dừng
       .inner-group
-        label(for="", class="inner-label") Mật khẩu
-        input(type="text", name="", class="inner-control")
+        label(for="password", class="inner-label") Mật khẩu *
+        input(type="password", name="password", class="inner-control", id="password")
       .inner-group.inner-two-col
-        label(for="", class="inner-label") Ảnh đại diện
-        input(type="file", name="", class="inner-control inner-input-file")
+        label(for="avatar", class="inner-label") Ảnh đại diện
+        input(type="file", name="avatar", class="inner-control inner-input-file", filepond-image, id="avatar")
       .inner-two-col.inner-button
         button Tạo mới
     a.inner-back(href="#") Quay lại danh sách

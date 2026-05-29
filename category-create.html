@@ -4,8 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Tạo danh mục</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css">
+    <link rel="stylesheet" href="https://unpkg.com/filepond@^4/dist/filepond.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tiny.cloud/1/8gl56ezm94s5nxbgzp5wseyblhplcznd0xamzx5l138on6gz/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header"><a class="inner-logo" href="#"><span class="inner-text-1">28</span><span class="inner-text-2">Admin</span></a>
@@ -37,40 +40,46 @@
         <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
       </ul>
     </nav>
+    <div class="box-overlay"></div>
     <main class="main">
       <div class="box-title">Tạo danh mục</div>
       <div class="section-7">
-        <form class="inner-form">
+        <form class="inner-form" id="categoryCreateForm">
           <div class="inner-group">
-            <label class="inner-label" for="">Tên danh mục</label>
-            <input class="inner-control" type="text" name="">
+            <label class="inner-label" for="categoryName">Tên danh mục *</label>
+            <input class="inner-control" type="text" name="categoryName" id="categoryName">
           </div>
           <div class="inner-group">
-            <label class="inner-label" for="">Danh mục cha</label>
-            <select class="inner-control" name="">
+            <label class="inner-label" for="categoryParent">Danh mục cha</label>
+            <select class="inner-control" name="categoryParent" id="categoryParent">
               <option value="">-- Chọn danh mục --</option>
-              <option value="">category-1</option>
-              <option value="">category-2</option>
-              <option value="">category-3</option>
+              <option value="category-1">category-1</option>
+              <option value="category-2">category-2</option>
+              <option value="category-3">category-3</option>
             </select>
           </div>
           <div class="inner-group">
-            <label class="inner-label" for="">Vị trí</label>
-            <input class="inner-control" type="number" name="">
+            <label class="inner-label" for="position">Vị trí</label>
+            <input class="inner-control" type="number" name="position" id="position">
           </div>
           <div class="inner-group">
-            <label class="inner-label" for="">Trạng thái</label>
-            <select class="inner-control" name="">
-              <option value="">Hoạt động</option>
+            <label class="inner-label" for="status">Trạng thái</label>
+            <select class="inner-control" name="status" id="status">
+              <option value="hoat-dong">Hoạt động</option>
+              <option value="tam-dung">Tạm dừng</option>
             </select>
           </div>
           <div class="inner-group inner-two-col">
-            <label class="inner-label" for="">Ảnh đại diện</label>
-            <input class="inner-control inner-input-file" type="file" name="">
+            <label class="inner-label" for="avatar">Ảnh đại diện</label>
+            <input class="inner-control inner-input-file" type="file" name="avatar" filepond-image id="avatar">
           </div>
           <div class="inner-group inner-two-col">
-            <label class="inner-label" for="">Mô tả</label>
-            <textarea class="inner-control" name=""></textarea>
+            <label class="inner-label" for="logo">Logo</label>
+            <input class="inner-control inner-input-file" type="file" name="logo" filepond-image id="logo">
+          </div>
+          <div class="inner-group inner-two-col">
+            <label class="inner-label" for="description">Mô tả</label>
+            <textarea class="inner-control" name="description" textarea-mce id="description"></textarea>
           </div>
           <div class="inner-two-col inner-button">
             <button>Tạo mới</button>
@@ -78,5 +87,12 @@
         </form><a class="inner-back" href="#">Quay lại danh sách</a>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"> </script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="assets/js/script.js"> </script>
   </body>
 </html>

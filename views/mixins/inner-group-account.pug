@@ -1,4 +1,4 @@
-mixin inner-group(type, id, label, placeholder)
+mixin inner-group(type, id, label, placeholder, name)
   .inner-group
     label(for=id, class="inner-label") #{label}
-    input(type=type, name="", id=id, placeholder=placeholder, class="inner-control")
+    input(type=type, name=name, id=id, placeholder=placeholder, class="inner-control")

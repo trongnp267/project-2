@@ -8,25 +8,25 @@ block main
 
   //- Section 7
   .section-7
-    form.inner-form
+    form.inner-form(id="settingWebsiteInfoForm")
       .inner-group
-        label(for="", class="inner-label") Tên website
-        input(type="text", name="", class="inner-control")
+        label(for="websiteName", class="inner-label") Tên website 
+        input(type="text", name="websiteName", class="inner-control", id="websiteName")
       .inner-group
-        label(for="", class="inner-label") Số điện thoại
-        input(type="number", name="", class="inner-control")
+        label(for="phone", class="inner-label") Số điện thoại 
+        input(type="number", name="phone", class="inner-control", id="phone")
       .inner-group
-        label(for="", class="inner-label") Email
-        input(type="email", name="", class="inner-control")
+        label(for="email", class="inner-label") Email 
+        input(type="email", name="email", class="inner-control", id="email")
       .inner-group
-        label(for="", class="inner-label") Địa chỉ
-        input(type="text", name="", class="inner-control")
+        label(for="address", class="inner-label") Địa chỉ
+        input(type="text", name="address", class="inner-control", id="address")
       .inner-group
-        label(for="", class="inner-label") Logo
-        input(type="file", name="", class="inner-control inner-input-file")
+        label(for="logo", class="inner-label") Logo
+        input(type="file", name="logo", class="inner-control inner-input-file", filepond-image, id="logo")
       .inner-group
-        label(for="", class="inner-label") Favicon
-        input(type="file", name="", class="inner-control inner-input-file")
+        label(for="favicon", class="inner-label") Favicon
+        input(type="file", name="favicon", class="inner-control inner-input-file", filepond-image, id="favicon")
       .inner-two-col.inner-button
         button Cập nhật
     a.inner-back(href="#") Quay lại danh sách

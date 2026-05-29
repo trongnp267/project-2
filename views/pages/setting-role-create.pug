@@ -9,21 +9,21 @@ block main
 
   //- Section 7
   .section-7
-    form.inner-form
+    form.inner-form(id="settingRoleCreateForm")
       .inner-group
-        label(for="", class="inner-label") Tên nhóm quyền
-        input(type="text", name="", class="inner-control")
+        label(for="roleName", class="inner-label") Tên nhóm quyền *
+        input(type="text", name="roleName", class="inner-control", id="roleName")
       .inner-group
-        label(for="", class="inner-label") Mô tả ngắn
-        input(type="text", name="", class="inner-control")
+        label(for="description", class="inner-label") Mô tả ngắn
+        input(type="text", name="description", class="inner-control", id="description")
       .inner-group
         label(for="", class="inner-label") Phân quyền
         .inner-checkbox-list
-          +checkbox-28("box-1", "Xem trang Tổng quan")
-          +checkbox-28("box-2", "Xem danh mục")
-          +checkbox-28("box-3", "Tạo danh mục")
-          +checkbox-28("box-4", "Sửa danh mục")
-          +checkbox-28("box-5", "Xóa danh mục")
+          +checkbox-28("box-1", "Xem trang Tổng quan", "roles", "xem-trang-tong-quan")
+          +checkbox-28("box-2", "Xem danh mục", "roles", "xem-danh-muc")
+          +checkbox-28("box-3", "Tạo danh mục", "roles", "tao-danh-muc")
+          +checkbox-28("box-4", "Sửa danh mục", "roles", "sua-danh-muc")
+          +checkbox-28("box-5", "Xóa danh mục", "roles", "xoa-danh-muc")
       .inner-two-col.inner-button
         button Tạo mới
     a.inner-back(href="#") Quay lại danh sách

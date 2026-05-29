@@ -8,9 +8,9 @@ block title
 block main
   .inner-title Đăng nhập
   .inner-desc Vui lòng nhập email và mật khẩu để tiếp tục
-  form
-    +inner-group("text", "email", "Email", "Ví dụ: levana@gmail.com")
-    +inner-group("password", "password", "Mật khẩu", "")
+  form#loginForm(action="")
+    +inner-group("text", "email", "Email", "Ví dụ: levana@gmail.com", "email")
+    +inner-group("password", "password", "Mật khẩu", "", "password")
     .inner-meta
       +checkbox-28("rememberPassword", "Nhớ mật khẩu")
       a.inner-link(href="#") Quên mật khẩu?

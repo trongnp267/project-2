@@ -1,6 +1,6 @@
-mixin checkbox-28(id, label)
+mixin checkbox-28(id, label, name, value)
   .checkbox-wrapper-28
-    input.promoted-input-checkbox(type="checkbox", id=id)
+    input.promoted-input-checkbox(type="checkbox", id=id, name=name, value=value)
     svg
       use(xlink:href="#checkmark-28")
     label(for=id) #{label}

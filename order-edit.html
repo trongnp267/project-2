@@ -4,8 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Đơn hàng: OD000001</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css">
+    <link rel="stylesheet" href="https://unpkg.com/filepond@^4/dist/filepond.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tiny.cloud/1/8gl56ezm94s5nxbgzp5wseyblhplcznd0xamzx5l138on6gz/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header"><a class="inner-logo" href="#"><span class="inner-text-1">28</span><span class="inner-text-2">Admin</span></a>
@@ -37,46 +40,51 @@
         <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
       </ul>
     </nav>
+    <div class="box-overlay"></div>
     <main class="main">
       <div class="box-title">Đơn hàng: OD000001</div>
       <div class="section-7">
-        <form class="inner-form">
+        <form class="inner-form" id="orderEditForm">
           <div class="inner-group">
-            <label class="inner-label" for="">Tên khách hàng</label>
-            <input class="inner-control" type="text" name="">
+            <label class="inner-label" for="fullName">Tên khách hàng *</label>
+            <input class="inner-control" type="text" name="fullName" id="fullName">
           </div>
           <div class="inner-group">
-            <label class="inner-label" for="">Số điện thoại</label>
-            <input class="inner-control" type="number" name="">
+            <label class="inner-label" for="phone">Số điện thoại *</label>
+            <input class="inner-control" type="number" name="phone" id="phone">
           </div>
           <div class="inner-group inner-two-col">
-            <label class="inner-label" for="">Ghi chú</label>
-            <textarea class="inner-control" name=""></textarea>
+            <label class="inner-label" for="note">Ghi chú</label>
+            <textarea class="inner-control" name="note" id="note"></textarea>
           </div>
           <div class="inner-group">
-            <label class="inner-label" for="">Phương thức thanh toán</label>
-            <select class="inner-control" name="">
-              <option value="">Ví Momo</option>
+            <label class="inner-label" for="paymentMethod">Phương thức thanh toán</label>
+            <select class="inner-control" name="paymentMethod" id="paymentMethod">
+              <option value="momo">Ví Momo</option>
+              <option value="zalopay">Zala Pay</option>
+              <option value="bank">Bank</option>
             </select>
           </div>
           <div class="inner-group">
-            <label class="inner-label" for="">Trạng thái thanh toán</label>
-            <select class="inner-control" name="">
-              <option value="">Đã thanh toán</option>
-            </select>
-          </div>
-          <div class="inner-group">
-            <label class="inner-label" for="">Ngày đặt</label>
-            <input class="inner-control" type="date" name="">
-          </div>
-          <div class="inner-group">
-            <label class="inner-label" for="">Trạng thái</label>
-            <select class="inner-control" name="">
-              <option value="">Khởi tạo</option>
+            <label class="inner-label" for="paymentStatus">Trạng thái thanh toán</label>
+            <select class="inner-control" name="paymentStatus" id="paymentStatus">
+              <option value="paid">Đã thanh toán</option>
+              <option value="unpaid">Chưa thanh toán</option>
             </select>
           </div>
           <div class="inner-group">
             <label class="inner-label" for="">Ngày đặt</label>
+            <input class="inner-control" type="text" name="" readonly value="17/05/2026">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="status">Trạng thái</label>
+            <select class="inner-control" name="status" id="status">
+              <option value="initial">Khởi tạo</option>
+              <option value="uninitial">Chưa khởi tạo</option>
+            </select>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="">Danh sách tour</label>
             <div class="inner-tour-list">
               <div class="inner-item"><img src="assets/images/tour-1.png" alt="">
                 <div class="inner-content">
@@ -119,5 +127,12 @@
         </form><a class="inner-back" href="#">Quay lại danh sách</a>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"> </script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="assets/js/script.js"> </script>
   </body>
 </html>
